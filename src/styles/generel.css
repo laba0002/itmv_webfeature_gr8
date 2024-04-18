@@ -11,9 +11,9 @@ img {
 }
 
 main {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: auto;
-  padding: 25px;
+  /* padding: 25px; */
 }
 
 /** Variabler **/
