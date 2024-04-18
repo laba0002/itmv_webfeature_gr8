@@ -1,0 +1,58 @@
+/*******reset*******/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  max-width: 1400px;
+  margin: auto;
+  padding: 25px;
+}
+
+/** Variabler **/
+
+:root {
+  --background-color: #ffff;
+  --text-color: #3e5c6d;
+  --action-color: #e84a26;
+  --secondary-color: #f0eeea;
+  /* --tertiary-color: #538a42; */
+}
+
+/** Farver**/
+
+body {
+  background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: var(--text-color);
+}
+
+span {
+  color: var(--action-color);
+}
+
+/** typografi **/
+
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
