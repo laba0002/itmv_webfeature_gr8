@@ -5,6 +5,7 @@ import "../styles/generel.css"
 <section class="blue">
 
 <h1>KVINDERNE BAG PRODUKTET </h1>
+
 <div class="picture_scroll">
 <img src="/../../public/billeder/kvinde1.webp" alt="Kvinde som smiler">
 <img src="/../../public/billeder/kvinde2.webp" alt="Kvinde som smiler">
@@ -31,13 +32,11 @@ import "../styles/generel.css"
     font-weight: normal;
 }
 
-.blue {
-    width: 1400px;
-}
 
-.blue * {
+
+/* .blue * {
     margin: 0 auto;
-}
+} */
 
 .picture_scroll {
     display: flex;
@@ -53,8 +52,28 @@ import "../styles/generel.css"
     margin-top: 5%; */
 }
 
+@media (min-width: 800px) {
 .picture_scroll {
     max-width: 800px;
+} 
+.citat {
+    display: flex;
+    text-align: center;
+    width: 800px;
+align-items: center;
+margin: 0 auto;
+font-size: 2rem;
+}
+.blue {
+    width: 1400px;
+}
+}
+
+.citat, .blue h1 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 1.4rem;
 }
 
 .picture_scroll img {
@@ -66,15 +85,11 @@ import "../styles/generel.css"
 .picture_scroll img:hover {
     scale: 1.2;
     transition: 1s;
+    cursor: pointer;
+}
+.citat {
+    padding: 10px;
 }
 
-.citat {
-    display: flex;
-    text-align: center;
-    width: 800px;
-align-items: center;
-margin: 0 auto;
-font-size: 2rem;
-}
 
 </style>
