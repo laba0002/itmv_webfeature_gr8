@@ -22,6 +22,8 @@ import "../styles/generel.css"
     “At det er udsatte kvinder, som vi kan være med til at hjælpe tættere på arbejdsmarkedet og samtidig bidrage til at de får gode erfaringer på en arbejdsplads er meget meningsfuldt og et formål vi gerne vil støtte.”
 </p>
 
+<video controls loop src="../../public/videoer/visual_data_itmv.mp4"></video>
+
 </section>
 
 <style>
@@ -30,6 +32,13 @@ import "../styles/generel.css"
     background-color: #3E5C6D;
     color: #fff;
     font-weight: normal;
+}
+.center {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 3.2rem;
 }
 
 
@@ -42,7 +51,7 @@ import "../styles/generel.css"
     display: flex;
     align-items: center;
     /* justify-content: center; */
-    height: 540px;
+    height: 300px;
     /* margin: 0 20px; */
     /* width: 1000px; */
     overflow-x: scroll;
@@ -50,11 +59,12 @@ import "../styles/generel.css"
     scroll-snap-type: x mandatory;
     /* margin-bottom: 10%;
     margin-top: 5%; */
+    width: 400px
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
 .picture_scroll {
-    max-width: 800px;
+width: 800px;
 } 
 .citat {
     display: flex;
@@ -65,7 +75,11 @@ margin: 0 auto;
 font-size: 2rem;
 }
 .blue {
-    width: 1400px;
+    width: auto;
+}
+
+.blue h1 {
+    font-size: 5rem;
 }
 }
 
@@ -76,6 +90,14 @@ font-size: 2rem;
     font-size: 1.4rem;
 }
 
+.blue h1 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.blue {
+    padding: 100px 0 100px 0;
+}
 .picture_scroll img {
     z-index: 1;
     width: 270px;
@@ -89,6 +111,7 @@ font-size: 2rem;
 }
 .citat {
     padding: 10px;
+    line-height: 42px;
 }
 
 
