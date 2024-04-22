@@ -11,9 +11,9 @@ img {
 }
 
 main {
-  max-width: 1600px;
+  /* max-width: 1600px; */
   margin: auto;
-  padding: 25px;
+  /* padding: 25px; */
   display: flex;
   justify-content: center;
 }

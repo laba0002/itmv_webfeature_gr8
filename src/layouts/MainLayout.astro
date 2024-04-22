@@ -12,8 +12,17 @@ import "../styles/generel.css"
 	</head>
 
 	<body>
-    <main>
+    <main >
 		<slot />
     </main>
 	</body>
 </html>
+
+<style>
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+</style>
