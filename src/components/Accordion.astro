@@ -10,9 +10,11 @@ import "../styles/generel.css"
     </summary>
     <article>
    <p> Hvert år bliver der produceret mere end 80 milliarder stykker tøj globalt, hvilket er en betydelig mængde. Men sammen med den glæde og stil, de bringer os, kommer også en udfordring: affald og miljøpåvirkning. Ifølge eksperter fra World Economic Forum genererer modeindustrien årligt omkring 92 millioner tons affald og står for 10% af den samlede CO2-udledning.
-<br>
+</p>
+<p>
     Men der er håb i horisonten! Genanvendelse af tekstiler kan spille en afgørende rolle i at mindske denne påvirkning. Ved at genanvende en lille del af tekstilaffaldet kan vi spare betydelige mængder CO2 og vand årligt, ifølge data fra Ellen MacArthur Foundation.
-    <br>
+  </p>
+  <p>
     Men vi kan ikke løse dette problem alene gennem genanvendelse. Vi skal også tage et kig på vores forbrugsmønstre og prioritere kvalitet og bæredygtighed. Ved at forlænge levetiden for vores tøj og værdsætte hvert stykke kan vi skabe en mere stabil og ansvarlig fremtid for tekstilindustrien. Lad os gå denne vej sammen og skabe en positiv forandring, én fiber ad gangen.
 </p>
 </article>
@@ -94,12 +96,20 @@ import "../styles/generel.css"
   .acc_titel {
     writing-mode: vertical-rl;
 text-orientation: upright;
-font-size: 5rem;
+font-size: 7rem;
   }
 details,
   summary, article {
     width: 500px;
     margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 1000px) {
+    .grid_1-2{
+    width: 200px;
+
+  }
+
   }
   summary {
     display: flex;
@@ -151,7 +161,7 @@ gap: 1rem;
 
 .grid_1-2{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   margin: 0 auto
 }
 
