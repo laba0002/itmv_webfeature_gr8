@@ -4,10 +4,69 @@ import "../styles/generel.css"
 
 <header>
 <menu>
-    <ul><a href=""><li>Start</li></a></ul>
-    <ul><a href=""><li>Samarbejdet</li></a></ul>
-    <ul><a href=""><li>Mød os</li></a></ul>
-    <ul><a href=""><li>Hvad i får</li></a></ul>
-    <ul><a href=""><li>Bliv partner NU</li></a></ul>
+    <ul id="small_screen">
+        <a href=""><li>1</li></a>
+        <a href=""><li>2</li></a>
+        <a href=""><li>3</li></a>
+        <a href=""><li>4</li></a>
+        <a href=""><li>5</li></a>
+    </ul>  
+    <ul id="big_screen">
+        <a href=""><li>Start</li></a>
+        <a href=""><li>Samarbejdet</li></a>
+        <a href=""><li>Mød os</li></a>
+        <a href=""><li>Hvad i får</li></a>
+        <a href=""><li>Bliv partner NU</li></a>
+    </ul>
 </menu>
 </header>
+
+<style>
+    menu{
+        position:fixed;
+        background-color:  var(--background-color);
+        width: 100%;
+        z-index: 20;
+        gap: 8rem;
+        list-style: none;
+    
+    }
+    #big_screen{
+    display: none;
+    }
+    a{
+        text-decoration: none;
+        margin-top: 1.7rem;
+        margin-bottom: 1.5rem;
+        color: var(--text-color);
+    }
+    a:hover{
+        color: var(--action-color);
+    }
+    #small_screen{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        gap: 5rem;
+        list-style: none;
+        padding-left: 20px; 
+        padding-right: 20px;
+        font-size:xx-large;
+    }
+    @media (min-width: 800px) {
+        #small_screen{
+        display: none;
+        }
+        #big_screen{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        gap: 7rem;
+        list-style: none;
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+   }
+</style>
