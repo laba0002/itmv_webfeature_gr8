@@ -10,13 +10,11 @@ img {
   display: block;
 }
 
-main {
-  /* max-width: 1600px; */
+/* main {
+  max-width: 1400px;
   margin: auto;
-  /* padding: 25px; */
-  display: flex;
-  justify-content: center;
-}
+  padding: 25px;
+} */
 
 /** Variabler **/
 

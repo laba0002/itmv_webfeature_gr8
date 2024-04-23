@@ -1,22 +1,28 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Header from "../components/TopMenu.astro";
 import Accordion from "../components/Accordion.astro";
-import Footer from "../components/Footer.astro";
+import Footer from "../components/Footer.astro"
 import KvinderneProdukt from "../components/KvinderneProdukt.astro";
+import KvindeSyBillede from "../components/KvindeSyBillede.astro";
+import TopMenu from "../components/TopMenu.astro";
 import TopVideo from "../components/TopVideo.astro";
+import Samarbejdet from "../components/Samarbejdet.astro";
 import PinkSektion from "../components/PinkSektion.astro";
+import SidsteBillede from "../components/SidsteBillede.astro";
 ---
 
 <MainLayout>
-  <Header />
-  <TopVideo />
-  <KvinderneProdukt />
 
-  <PinkSektion />
-  <Accordion />
-  <Footer />
+    <TopMenu></TopMenu>
+<TopVideo></TopVideo>
+<Samarbejdet></Samarbejdet>
+<KvinderneProdukt></KvinderneProdukt>
+<PinkSektion></PinkSektion>
+<Accordion></Accordion>
+<SidsteBillede></SidsteBillede>
+<Footer></Footer>
+
+
+  
+  <KvindeSyBillede < MainLayout />
 </MainLayout>
-
-<style></style>
-
