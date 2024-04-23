@@ -1,0 +1,41 @@
+---
+import "../styles/generel.css"
+---
+
+<a class="pakke_knap" href="https://www.itmv.dk/pages/partnerskab">Se vores pakker</a>
+
+<style>
+
+.pakke_knap {
+    text-decoration: none;
+    border-bottom: 1px solid #3e5c6d;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #3e5c6d;
+}
+
+.pakke_knap:hover {
+    animation-name: border_kf;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  transition: 0.3s;
+}
+
+
+@keyframes border_kf {
+  0% {
+    border-left: #3e5c6d 1px solid;
+  }
+  50% {
+    border-left: #3e5c6d 1px solid;
+    border-top: #3e5c6d 1px solid;
+  }
+  100% {
+    border-left: #3e5c6d 1px solid;
+    border-top: #3e5c6d 1px solid;
+    border-right: #3e5c6d 1px solid;
+  }
+}
+</style>

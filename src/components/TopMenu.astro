@@ -1,0 +1,123 @@
+---
+import "../styles/generel.css"
+---
+
+<header>
+<menu>
+    <ul id="small_screen">
+        <a href=""><li>1</li></a>
+        <a href=""><li>2</li></a>
+        <a href=""><li>3</li></a>
+        <a href=""><li>4</li></a>
+        <a href=""><li>5</li></a>
+    </ul>  
+    <ul id="big_screen">
+        <a href=""><li>Start</li></a>
+        <a href=""><li>Samarbejdet</li></a>
+        <a href=""><li>Mød os</li></a>
+        <a href=""><li>Hvad i får</li></a>
+        <a href=""><li>Bliv partner NU</li></a>
+    </ul>
+</menu>
+<div class="progress_bar"><span></span></div>
+</header>
+
+<style>
+    menu{
+        position:fixed;
+        background-color:  var(--background-color);
+        width: 100%;
+        z-index: 20;
+        gap: 8rem;
+        list-style: none;
+    
+    }
+    #big_screen{
+    display: none;
+    }
+    a{
+        text-decoration: none;
+        margin-top: 1.7rem;
+        margin-bottom: 1.5rem;
+        color: var(--text-color);
+    }
+    a:hover{
+        color: var(--action-color);
+    }
+    #small_screen{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        gap: 5rem;
+        list-style: none;
+        padding-left: 20px; 
+        padding-right: 20px;
+        font-size:xx-large;
+    }
+span{
+    position: absolute;
+    top: 83px;
+    left: 0;
+    display: inline-block;
+    height: 5px;
+    min-width: 1px;
+    background-color: var(--action-color);
+    -webkit-transition: width .4s ease;
+    transition: width .4s ease;
+    position:fixed;
+    z-index: 30;
+}
+
+.progress-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+    line-height: 0;
+}
+
+@media (min-width: 800px) {
+        #small_screen{
+        display: none;
+        }
+        #big_screen{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        gap: 7rem;
+        list-style: none;
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+   }
+
+   @media (min-width: 858px) {
+    span{
+    top: 64.5px;
+}
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const progressBar = document.querySelector('.progress_bar span') as HTMLElement;
+
+    // Update progress bar width based on scroll position
+    function updateProgressBar() {
+        const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = (window.scrollY / totalHeight) * 100;
+        progressBar.style.width = `${progress}%`;
+    }
+
+    // Listen for scroll events and update progress bar width
+    document.addEventListener('scroll', updateProgressBar);
+
+    // Initial update on page load
+    updateProgressBar();
+});
+
+
+</script>
