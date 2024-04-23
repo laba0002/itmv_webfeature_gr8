@@ -3,40 +3,32 @@
 ---
 
 <div class="billede">
-  <img src="/img_sara/protraet.webp" alt="kvinde der syer" />
-</div>
-
-<div class="tekst">
-  <p>
-    " Der har stort set været plads til at have det som jeg nu <br /> havde det
-    på dagen. <strong
-      >Tonen og omgangsformen er venlig <br /> og rummelig</strong
-    >, følte mig for det meste velkommen og værdsat."
-  </p>
-</div>
-
-<style>
-  p {
-    font-size: 18px;
-    color: #d45835;
-    line-height: 2;
-  }
-
-  .tekst {
-    position: relative;
-    top: -450px;
-    left: 10px;
-  }
-
-  @media (min-width: 900px) {
+    <img src="/img_sara/protraet.webp" alt="kvinde der syer" />
+    <p class="tekst">
+      "Der har stort set været plads til at have det som jeg nu <br /> havde det på dagen.
+      <strong>Tonen og omgangsformen er venlig <br /> og rummelig</strong>, følte mig for det meste velkommen og værdsat."
+    </p>
+  </div>
+  
+  <style>
     p {
-      font-size: 40px;
+      font-size: 1rem;
       color: #d45835;
       line-height: 2;
+      position: absolute;
+      top: 10px;
+      left: 10px;
     }
-    .tekst {
+  
+    .billede {
       position: relative;
-      top: -940px;
     }
-  }
-</style>
+  
+    @media (min-width: 900px) {
+      p {
+        font-size: 2rem;
+        top: 20px; /* Adjust the value as needed */
+        left: 20px; /* Adjust the value as needed */
+      }
+    }
+  </style>
