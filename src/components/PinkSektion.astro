@@ -3,8 +3,12 @@
 ---
 
 <article>
-  <div class="pink">
+  <!-- <div class="pink">
     <img src="img/pinkbg.svg" alt="pink baggrund" />
+  </div> -->
+
+  <div class="pinktop">
+    <img src="/public/img/pinktop.svg" alt="pink farve" />
   </div>
 
   <div class="indhold">
@@ -13,21 +17,22 @@
       <p>Du ønsker at gøre genanvendelse let og tilgængeligt for dine medarbejdere samtidig med at du styrker din virksomheds miljø- og socialansvar som en del af jeres ESG mål. Ved at støtte "I Tråd Med Verden" (ITMV) hjælper du med at skabe flere lønnede timer til vores dygtige syersker, hvilket fremmer bæredygtig empowerment.</p>
     </div>
 
-    <div class="blomst_v">
+    <!-- <div class="blomst_v">
       <img src="/public/img/blomst_v.svg" alt="blomster broderi" />
-    </div>
+    </div>-->
 
     <div class="afsnit">
       <h2>Nyt liv til gammelt tøj</h2>
       <p>Vores innovative team, bestående af to erfarne syersker og en talentfuld designer, tilbyder reparation, tilpasning og fornyelse af tøj til dine medarbejdere. Vi er her for at forlænge levetiden på jeres tøj og give det nyt liv med alt fra oplægning og lynlåsreparationer til detaljer som broderi.</p>
     </div>
 
-    <div class="blomst_h">
+    <!--<div class="blomst_h">
       <img src="/public/img/blomst_h.svg" alt="blomster broderi" />
-    </div>
+    </div> -->
 
     <div class="afsnit">
-      <div class="bil"><img src="/public/img/bil.svg" alt="lille bil" /></div>
+      <!--    <div class="bil"><img src="/public/img/bil.svg" alt="lille bil" /></div>
+-->
 
       <h2>Vi kommer ud til dig</h2>
       <p>Vi kommer direkte til din virksomhed i Københavnsområdet, hvilket gør det nemt for jer at få adgang til vores REPAIR SERVICE. Vi skaber en bekvem løsning, der passer ind i jeres travle arbejdsdag.</p>
@@ -35,22 +40,37 @@
 
     <div class="afsnit">
       <h2>Fleksibelt og nemt</h2>
-      <div class="kalender"><img src="/public/img/kalender.svg" alt="lille kalender" /></div>
+
+      <!--       <div class="kalender"><img src="/public/img/kalender.svg" alt="lille kalender" /></div>-->
+
       <p>Sammen aftaler vi en fast dag, f.eks. hver anden uge eller en gang om måneden, hvor vores team vil være tilgængeligt for drop in og aflevering af tøj om morgenen. Vi bestræber os altid på at fuldføre dagens reparationer samme dag, men vi er fleksible og tilpasser os efter jeres behov.</p>
     </div>
+
+    <div class="plads"></div>
+  </div>
+
+  <div class="pinkbund">
+    <img src="/public/img/pinkbund.svg" alt="pink farve" />
   </div>
 </article>
 
 <style>
-  .pink {
+  .pinktop {
     position: relative;
+    top: 129px;
+  }
+
+  .pinkbund {
+    position: relative;
+    top: -195px;
   }
 
   /* ret "top" til, når alt er sat ind, for placere .indhold rigtigt */
   .indhold {
-    position: absolute;
     top: 106.5rem;
     width: 100%;
+    background-color: rgba(255, 138, 179, 0.18);
+    max-height: 2000px;
   }
 
   .afsnit {
@@ -91,7 +111,7 @@
   .bil {
     width: 90px;
     top: 645px;
-    position: absolute;
+
     left: 30px;
   }
 
@@ -99,10 +119,23 @@
     width: 50px;
     top: 890px;
     right: 80px;
-    position: absolute;
+  }
+
+  .plads {
+    padding-bottom: 80px;
   }
 
   @media (min-width: 900px) {
+    .pinktop {
+      top: 300px;
+    }
+
+    .plads {
+      padding-bottom: 200px;
+    }
+    .pinkbund {
+      top: -530px;
+    }
     .kalender {
       width: 80px;
     }
@@ -123,26 +156,31 @@
 
     .indhold {
       top: 170rem;
+      min-height: 3000px;
     }
 
     .blomst_v {
       width: 350px;
-      top: 550px;
+      position: absolute;
+      top: 3550px;
     }
 
     .blomst_h {
       width: 350px;
-      top: 640px;
+      position: absolute;
+      top: 3640px;
     }
 
     .bil {
       width: 180px;
+      position: absolute;
       top: 1480px;
       left: 14rem;
     }
 
     .kalender {
       top: 2040px;
+      position: absolute;
       right: 410px;
     }
   }
