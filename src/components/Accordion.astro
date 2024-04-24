@@ -168,9 +168,10 @@ import "../styles/generel.css";
           <img src="/billeder/navn.webp" alt="">
           <img src="/billeder/navn.webp" alt="">
           <img src="/billeder/navn.webp" alt="">
-        
         </div>
-        <p>  </p>
+        <div class="flex_row">
+        <p> Tilføj motiv</p> <p>Tilføj initialer/navn</p> <p>Tilføj dealjer</p>
+      </div>
       </article>
     </details>
 
@@ -281,5 +282,10 @@ import "../styles/generel.css";
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
   }
+
+  .flex_row {
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;  }
 
 </style>
