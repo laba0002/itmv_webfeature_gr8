@@ -3,10 +3,6 @@
 ---
 
 <article>
-  <!-- <div class="pink">
-    <img src="img/pinkbg.svg" alt="pink baggrund" />
-  </div> -->
-
   <div class="pinktop">
     <img src="/img/pinktop.svg" alt="pink farve" />
   </div>
@@ -55,6 +51,10 @@
 </article>
 
 <style>
+  article {
+    position: relative; /* Sørger for at komponentet kan rykkes */
+    top: -6.6cm; /* Rykker hele komponentet op med 2 cm */
+  }
   .pinktop {
     position: relative;
     top: 129px;
@@ -70,7 +70,6 @@
     top: 106.5rem;
     width: 100%;
     background-color: rgba(255, 138, 179, 0.18);
-    max-height: 2000px;
   }
 
   .afsnit {
@@ -127,6 +126,10 @@
   }
 
   @media (min-width: 900px) {
+    article {
+      position: relative; /* Sørger for at komponentet kan rykkes */
+      top: -17cm; /* Rykker hele komponentet op med 2 cm */
+    }
     .pinktop {
       top: 300px;
     }
