@@ -1,20 +1,84 @@
 ---
-import "../styles/generel.css"
+import "../styles/generel.css";
 ---
 
-<section>
-    <div class="container">
-      <img src="/billeder/tehat.webp" alt="tehætte">
-    </div>
-<article>
-    <h1>Hvad i får</h1>
-    <p>Man møder ind som normalt på arbejdspladsen ➡️ går ned ➡️ afleverer sit yndlingstøj til syerskene. 
-        Hent dit tøj når din arbejdsdag er omme voila dit tøj får nyt liv!</p>
-</article>
+<section class="billede">
+  <div class="container">
+    <img src="/billeder/tehat.webp" alt="tehætte" />
+  </div>
+
+  <article>
+    <h1>HVAD I FÅR</h1>
+    <p>Man møder ind som normalt på arbejdspladsen. <br /> Går ned & afleverer sit yndlingstøj til syerskene. <br /> Hent dit tøj når din arbejdsdag er omme <br /> voila dit tøj får nyt liv!</p>
+  </article>
 </section>
-<section>
-<p>“Vi valgte at bruge repair-service så ansatte [...] også 
-    kunne få glæde af ITMV’s færdigheder – som et medarbejdergode og for at gøre det let [...] for de ansatte at vælge en bæredygtig løsning.”
-</p>
-<p>- Camilla</p>
+
+<section class="roed_citat">
+  <p>“Vi valgte at bruge repair-service så ansatte [...] også kunne få glæde af ITMV’s færdigheder – som et medarbejdergode og for at gøre det let [...] for de ansatte at vælge en bæredygtig løsning.”</p>
+  <p class="navn">- Camilla Hansen</p>
 </section>
+
+<style>
+  .container {
+    position: relative;
+  }
+  .billede article h1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+
+  .billede article p {
+    font-size: 20px;
+    color: white;
+
+    line-height: 140%;
+  }
+
+  article {
+    margin-top: -60%;
+    position: absolute;
+    padding: 20px;
+  }
+
+  .roed_citat p {
+    color: #d45835;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 0;
+    line-height: 140%;
+  }
+
+  .navn {
+    text-indent: 60%;
+    padding-bottom: 200px;
+  }
+
+  @media (min-width: 900px) {
+    .billede article p {
+      font-size: 40px;
+      padding: 40px;
+      line-height: 180%;
+    }
+
+    .billede article h1 {
+      font-size: 50px;
+      padding-top: 90px;
+    }
+
+    .roed_citat p {
+      font-size: 30px;
+      padding: 190px;
+      padding-top: 80px;
+      line-height: 180%;
+    }
+
+    .navn {
+      text-indent: 60%;
+      margin-top: -190px;
+    }
+  }
+</style>
