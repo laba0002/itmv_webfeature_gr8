@@ -1,74 +1,77 @@
 ---
-import "../styles/generel.css"
-import PakkerKnap from "./PakkerKnap.astro"
+import "../styles/generel.css";
+import PakkerKnap from "./PakkerKnap.astro";
 ---
 
 <section class="center">
+  <img src="/billeder/broderiblomst.svg" alt="broderi blomst svg" />
 
-    <img src="/billeder/broderiblomst.svg" alt="broderi blomst svg">
+  <h1>LAD OS ARBEJDE SAMMEN!</h1>
 
-    <h1>LAD OS ARBEJDE SAMMEN!</h1>
-
-    <PakkerKnap></PakkerKnap>
-<div class="top_gap"> 
+  <PakkerKnap />
+  <div class="top_gap">
     <p>Se endnu mere på vores sociale medier</p>
     <div id="footer-some-logo">
-<img src="/billeder/facebook.svg" alt="Facebook ikon">
-<img src="/billeder/linkedin.svg" alt="LinkedIn ikon">
-<img src="/billeder/instagram.svg" alt="Instagram ikon">
+      <img src="/billeder/facebook.svg" alt="Facebook ikon" />
+      <img src="/billeder/linkedin.svg" alt="LinkedIn ikon" />
+      <img src="/billeder/instagram.svg" alt="Instagram ikon" />
     </div>
-
-    </div>
-
+  </div>
 </section>
 
 <style>
+  .center img {
+    margin-top: 150px;
+  }
 
-.center img {
-    margin-top: 150px
-}
-
-.center {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-gap: 1.8rem;
-}
-.top_gap {
-    margin-top: 3rem;
-}
-
-section.center {
+  .center {
+    display: flex;
     justify-content: center;
-flex-direction: column;
-gap: 1.8rem;
-}
+    align-items: center;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+  .top_gap {
+    margin-top: 3rem;
+  }
 
-h1 {
+  .top_gap img {
+    height: 60px;
+  }
+
+  section.center {
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+
+  h1 {
     font-size: 2rem;
     font-weight: normal;
-}
+  }
 
-
-    #footer-some-logo{
-        display: flex;
-        flex-direction: row;
-        margin-top: 20px;
-        gap:15px;
-        height: 60px;
-        width: auto;
+  #footer-some-logo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 15px;
+    height: 60px;
+    width: auto;
+  }
+  @media (max-width: 1000px) {
+    #some-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 20px;
     }
-    @media (max-width: 1000px) {
-       #some-footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 20px;
-        }
 
-       center h1 {
-            font-size: 7rem;
-        }
+    center h1 {
+      font-size: 7rem;
     }
+
+    .top_gap img {
+      height: 90px;
+    }
+  }
 </style>
