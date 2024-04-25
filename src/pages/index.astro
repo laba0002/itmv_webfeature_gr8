@@ -14,7 +14,8 @@ import SidsteBillede from "../components/SidsteBillede.astro";
 <MainLayout>
 
 <TopMenu></TopMenu>
-<TopVideo id="start"></TopVideo>
+<div class="topvideo">
+<TopVideo id="start"></TopVideo></div>
 <Samarbejdet id="samarbejdet"></Samarbejdet>
 <KvindeSyBillede></KvindeSyBillede>
 <KvinderneProdukt id="omos"></KvinderneProdukt>
@@ -26,3 +27,9 @@ import SidsteBillede from "../components/SidsteBillede.astro";
 
   
 </MainLayout>
+
+<style>
+    .topvideo{
+        padding-top: 80px;
+    }
+</style>
